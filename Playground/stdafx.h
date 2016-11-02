@@ -8,12 +8,15 @@
 #include "targetver.h"
 
 #include <stdio.h>
+#ifdef _MSC_VER
 #include <tchar.h>
+#endif
 #include <iostream>
 #include <vector>
 #include <string>
 #include <map>
 #include <cassert>
+#include <climits>
 
 
 // TODO: reference additional headers your program requires here

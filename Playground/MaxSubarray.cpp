@@ -74,9 +74,10 @@ MaxSubarrayDesc DCMaxSubarray(std::vector<int>& array, size_t l, size_t r)
 	MaxSubarrayDesc rr = DCMaxSubarray(array, mid+1, r);
 	MaxSubarrayDesc rm = MaxCrossingArray(array, l, mid, r);
 
-	if (rr < rl)
+	if (rr < rl) {
 		if(rm < rl) return rl;
 		else return rm;
+	}
 	if (rm < rr) return rr;
 	return rm;
 }
