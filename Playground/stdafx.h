@@ -15,8 +15,12 @@
 #include <vector>
 #include <string>
 #include <map>
+#include <memory>
+#include <algorithm>
 #include <cassert>
 #include <climits>
 
 
 // TODO: reference additional headers your program requires here
+
+#include "Heap.h"
