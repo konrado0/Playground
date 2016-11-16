@@ -34,6 +34,16 @@ void Heap::MaxHeapify(size_t i)
 	}
 }
 
+void Heap::Sort(std::vector<int>& array) {
+	Heap heap(array);
+
+	while(heap.heap_size>1) {
+		std::swap(array[heap.heap_size - 1], array[0]);
+		heap.heap_size--;
+		heap.MaxHeapify(0);
+	}
+}
+
 void Heap::BuildHeap()
 {
 	for(int i=heap_size/2-1; i>=0; i--)
@@ -44,7 +54,8 @@ void Heap::BuildHeap()
 void TestHeap()
 {
 	std::vector<int> v4 = { 13, 3, 25, 20, -3, 16, 23, 18, 20, -7, 12, -5, -22, 15, -4, 7 };
-	Heap h4(v4);
+	Heap::Sort(v4);
+	PrintVector(v4);
 
 	std::vector<int> v5 = { -1, -4, 66, 77, 123, -67, 13, 3, 25, 20, -3, 16, 23, 18, 20, -7, 12, -5, -22, 15, -4, 7 };
 	Heap h5(v5);

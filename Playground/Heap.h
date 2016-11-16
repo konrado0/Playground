@@ -12,6 +12,8 @@ class Heap {
 public:
 	Heap(std::vector<int>& array, size_t heap_size = 0);
 
+	static void Sort(std::vector<int>& array);
+
 private:
 	void MaxHeapify(size_t i);
 	void BuildHeap();
