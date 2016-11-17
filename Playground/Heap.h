@@ -10,9 +10,17 @@
 
 class Heap {
 public:
+	static void Sort(std::vector<int>& array);
+
 	Heap(std::vector<int>& array, size_t heap_size = 0);
 
-	static void Sort(std::vector<int>& array);
+	int Size(){ return heap_size; }
+	int Max(){ return array[0]; }
+	int ExtractMax();
+	void IncreaseKey(size_t index, int value);
+	void Insert(int value);
+	void Delete(size_t index);
+
 
 private:
 	void MaxHeapify(size_t i);

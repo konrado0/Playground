@@ -17,6 +17,7 @@
 #include <map>
 #include <memory>
 #include <algorithm>
+#include <stdexcept>
 #include <cassert>
 #include <climits>
 

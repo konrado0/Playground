@@ -17,8 +17,13 @@ void TestHeap();
 
 int main()
 {
-	TestHeap();
-	cout << "Hello world!" << endl;
+	try {
+		TestHeap();
+		cout << "Hello world!" << endl;
+	} catch (std::exception& e) {
+		cout << e.what() << endl;
+		return 1;
+	}
 	return 0;
 }
 
