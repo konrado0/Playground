@@ -7,8 +7,6 @@
 
 #include "stdafx.h"
 
-void PrintVector(std::vector<int> array);
-
 Heap::Heap(std::vector<int>& array, size_t heap_size) : array(array), heap_size(heap_size)
 {
 	if(heap_size == 0)

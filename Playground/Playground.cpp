@@ -14,11 +14,12 @@ void PrintVector(std::vector<int> array)
 
 void TestMaxSubarray();
 void TestHeap();
+void TestQuickSort();
 
 int main()
 {
 	try {
-		TestHeap();
+		TestQuickSort();
 		cout << "Hello world!" << endl;
 	} catch (std::exception& e) {
 		cout << e.what() << endl;

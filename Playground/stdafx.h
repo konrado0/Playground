@@ -25,3 +25,5 @@
 // TODO: reference additional headers your program requires here
 
 #include "Heap.h"
+
+void PrintVector(std::vector<int> array);
