@@ -70,7 +70,7 @@ void TestQuickSort()
 
 	std::vector<int> v5 = { -1, -4, 66, 77, 123, -67, 13, 3, 25, 20, -3, 16, 23, 18, 20, -7, 12, -5, -22, 15, -4, 7 };
 	PrintVector(v5);
-	cout << "12th: " << RandomizeSelect(v5, 12) << endl;
+	cout << "11th: " << RandomizeSelect(v5, 11) << endl;
 	QuickSort(v5);
 	PrintVector(v5);
 }

@@ -153,6 +153,7 @@
     <ClCompile Include="Heap.cpp" />
     <ClCompile Include="MaxSubarray.cpp" />
     <ClCompile Include="Playground.cpp" />
+    <ClCompile Include="QuickSort.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
